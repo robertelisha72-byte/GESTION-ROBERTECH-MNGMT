@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBERTECH | Vente PC & IT Bukavu</title>
+    <meta name="description" content="Vente d'ordinateurs, réparation, services IT à Bukavu. SAV 24-48h, garantie 12 mois. Paiement M-Pesa, Orange Money.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Tuku">
+    <div class="loader-wrapper"><div class="loader-neon"></div><p class="loader-text">ROBERTECH</p></div>
+
+    <nav class="Bariki">
+        <div class="Amu">
+            <div class="logo"><a href="index.html">ROBERT<span>TECH</span></a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html"><i class="fas fa-user-circle"></i> Compte</a></li>
+            </ul>
+            <div class="nav-actions"><button id="darkModeToggle"><i class="fas fa-moon"></i></button><button id="cartIconBtn" class="cart-icon-btn"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></button><div class="hamburger" id="hamburger"><span></span><span></span><span></span></div></div>
+        </div>
+    </nav>
+
+    <div id="cartSidebar" class="cart-sidebar"><div class="cart-header"><h3>Mon panier</h3><button id="closeCartBtn"><i class="fas fa-times"></i></button></div><div id="cartItemsList" class="cart-items"></div><div class="cart-footer"><div class="cart-total">Total : <span id="cartTotal">0</span> FC</div><button id="checkoutBtn" class="Amba">Commander via WhatsApp</button></div></div>
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <main>
+        <section class="Sifa hero-section">
+            <div class="hero-glass fade-up">
+                <h1>Puissance & Fiabilité <span class="neon">À Bukavu</span></h1>
+                <p>Vente d'ordinateurs, réparation express, solutions IT pour entreprises, écoles et ONG. SAV local 24-48h • Garantie 12 mois • M-Pesa, Orange Money, Airtel Money.</p>
+                <div class="hero-buttons"><a href="services.html" class="Amba">Nos services <i class="fas fa-arrow-right"></i></a><a href="https://wa.me/243970779971" target="_blank" class="Amba outline">WhatsApp direct</a></div>
+            </div>
+        </section>
+
+        <section class="Sifa">
+            <h2 class="Ahadi">Solutions <span>high-tech</span></h2>
+            <div class="Mubuya">
+                <div class="Kate fade-up"><i class="fas fa-laptop-code"></i><h3>Vente PC & Gaming</h3><p>Ordinateurs portables, fixes, gaming, reconditionnés de qualité. Livraison Bukavu.</p><button onclick="addToCart('PC Gaming Pro', 850)" class="Amba" style="margin-top:1rem;">Ajouter au panier</button></div>
+                <div class="Kate fade-up"><i class="fas fa-microchip"></i><h3>Réparation express</h3><p>Dépannage matériel/logiciel, récupération données, upgrade RAM/SSD. 24-48h max.</p><button onclick="addToCart('Réparation PC', 45)" class="Amba" style="margin-top:1rem;">Ajouter au panier</button></div>
+                <div class="Kate fade-up"><i class="fas fa-shield-alt"></i><h3>Sécurité & réseau</h3><p>Installation fibre optique, pare-feu, surveillance caméras pour entreprises.</p><button onclick="addToCart('Installation Réseau', 250)" class="Amba" style="margin-top:1rem;">Ajouter au panier</button></div>
+            </div>
+        </section>
+
+        <section class="Sifa stats-bg">
+            <div class="Mubuya stats-container">
+                <div class="stat-item"><div class="stat-number" data-target="1320">0</div><p>PC vendus</p></div>
+                <div class="stat-item"><div class="stat-number" data-target="586">0</div><p>Clients satisfaits</p></div>
+                <div class="stat-item"><div class="stat-number" data-target="24">0</div><p>Heures SAV</p></div>
+                <div class="stat-item"><div class="stat-number" data-target="100">0</div><p>Projets IT</p></div>
+            </div>
+        </section>
+
+        <section class="Sifa">
+            <h2 class="Ahadi">Ils nous font confiance</h2>
+            <div class="Mubuya">
+                <div class="testimonial-card fade-up"><i class="fas fa-quote-left"></i><p>"ROBERTECH a équipé toute notre ONG, SAV réactif à Bukavu !"</p><h4>— Caritas Sud-Kivu</h4></div>
+                <div class="testimonial-card fade-up"><i class="fas fa-quote-left"></i><p>"Meilleur service après-vente de la ville, garantie honorée rapidement."</p><h4>— John M., entrepreneur</h4></div>
+                <div class="testimonial-card fade-up"><i class="fas fa-quote-left"></i><p>"Leur équipe a installé notre réseau et caméras, pro et efficace."</p><h4>— École Alpha Bukavu</h4></div>
+            </div>
+            <div style="text-align:center; margin-top:3rem;"><a href="https://wa.me/243970779971" target="_blank" class="Amba"><i class="fab fa-whatsapp"></i> Commander via WhatsApp</a></div>
+        </section>
+    </main>
+
+    <footer><div class="Amu footer-grid"><div><h3>ROBERTECH</h3><p>Expert IT à Bukavu, Sud-Kivu.</p></div><div><h4>Liens</h4><ul><li><a href="about.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Contact</h4><p><i class="fab fa-whatsapp"></i> +243 970779971</p><p>Bukavu, Q. Nyalukemba</p></div><div><h4>Paiements</h4><div><i class="fas fa-mobile-alt"></i> M-Pesa | Orange Money</div></div></div><div class="footer-bottom"><p>© 2025 ROBERTECH – SAV 24/48h | Garantie 12 mois</p></div></footer>
+    <a href="https://wa.me/243970779971" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <script src="script.js"></script>
+</body>
+</html>
